@@ -18,13 +18,28 @@ height: 70px;
 .mainbutton{
     background-color: rgb(43, 148, 43);
     color: white;
+}    
+.button{
     border: 0px;
     padding: 5px 10px;
     border-radius: 10px;
     font-weight: bolder;
 }
-.mainbutton:hover{
+.button:hover{
     cursor: pointer;
     transform: scale(1.1);
-    box-shadow: 1px 1px rgb(66, 85, 66);
+}
+.mainbutton{
+    background-color: rgb(43, 148, 43);
+    color: white;
+}
+.mainbutton:hover{
+    box-shadow: 1px 1px rgb(66, 85, 66); 
+}
+.secondarybutton{
+    background-color: rgb(77, 152, 221);
+    color: white;
+}
+.secondarybutton:hover{
+    box-shadow: 1px 1px rgb(37, 64, 124);
 }
