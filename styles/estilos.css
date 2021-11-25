@@ -38,4 +38,19 @@ height: 70px;
 }
 .secondarybutton:hover{
     box-shadow: 1px 1px rgb(37, 64, 124);
+}    
+.buscar{
+    background-color: white;
+    border: 1px solid gray;
+    padding: 4px;
+    border-radius: 8px;
+
+}
+.buscar:focus-within{
+    border: 1px solid blue;
+}
+
+.buscar>input{
+    outline:none;
+    border: 0px;
 }
