@@ -72,13 +72,61 @@ height: 70px;
 }
 .breedCard{
     margin: 10px;
+    background-color: rgb(78, 75, 75);
+    box-shadow: 5px 10px 5px rgb(190, 188, 188);
+    border-radius: 10px;
+}
+.breedTitle{
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+    font-size: x-large;
 }
 .contenedorImagen{
     width: 240px;
     height: 350px;
     display: flex;
+    margin-bottom: 10px;
+}
+.contenedorImagen:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+
 }
 .contenedorImagen> img{
     object-fit: cover;
     width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.mainTitle{
+    color: rgb(102, 100, 100);
+    text-align: center;
+}
+.colorLikes{
+    color: rgb(224, 39, 39);
+    font-weight: bold;
+    
+}
+.colorIconsCard{
+    color: white;
+    font-weight: bold;
+}
+.textoInforme{
+    color: white;
+    font-weight: bold;
+}
+.movWeb{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    
+}
+.botonesWeb{
+    background-color: rgb(78, 75, 75);
+    border: 0px;
+    padding: 10px;
+    
+    
+    
 }
