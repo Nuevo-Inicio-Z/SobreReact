@@ -1,0 +1,135 @@
+body{
+  margin: 0px;
+}
+ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(225, 229, 230);
+  border-bottom: 1px solid gray;
+  box-shadow: 1px 1px gray;
+}
+.navbar> li{
+  display: flex;
+  align-items: center;
+}
+.logo{
+height: 70px;
+}
+.button{
+  border: 0px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.mainbutton{
+  background-color: rgb(43, 148, 43);
+  color: white;
+}
+.mainbutton:hover{
+  box-shadow: 1px 1px rgb(66, 85, 66); 
+}
+.secondarybutton{
+  background-color: rgb(77, 152, 221);
+  color: white;
+}
+.secondarybutton:hover{
+  box-shadow: 1px 1px rgb(37, 64, 124);
+}    
+.buscar{
+  background-color: white;
+  border: 1px solid gray;
+  padding: 4px;
+  border-radius: 8px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.buscar:focus-within{
+  border: 1px solid blue;
+}
+
+.buscar>input{
+  outline:none;
+  border: 0px;
+}
+.iconoBusqueda:hover{
+  color: blue;
+}
+.breedCardContainer{
+  display: flex;
+}
+.breedCard{
+  margin: 10px;
+  background-color: rgb(78, 75, 75);
+  box-shadow: 5px 10px 5px rgb(190, 188, 188);
+  border-radius: 10px;
+}
+.breedTitle{
+  color: white;
+  margin: 10px;
+  font-weight: bold;
+  font-size: x-large;
+}
+.contenedorImagen{
+  width: 240px;
+  height: 350px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.contenedorImagen:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+
+}
+.contenedorImagen> img{
+  object-fit: cover;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.mainTitle{
+  color: rgb(102, 100, 100);
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+}
+.colorLikes{
+  color: rgb(224, 39, 39);
+  font-weight: bold;
+  
+}
+.colorIconsCard{
+  color: white;
+  font-weight: bold;
+}
+.textoInforme{
+  color: white;
+  font-weight: bold;
+}
+.movWeb{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  
+}
+.botonesWeb{
+  background-color: rgb(78, 75, 75);
+  border: 0px;
+  padding: 10px;
+}
+.botonesWeb:hover{
+cursor: pointer;
+transform: scale(1.1);
+}
