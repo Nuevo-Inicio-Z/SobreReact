@@ -37,124 +37,59 @@ function App() {
             </span>
             
             <ul class="breedCardContainer">
-                <li className="breedCard">
-                    <div className="contenedorImagen">
-                         <img src={fpsimagen} alt="FPS"/>
-                    </div>
-                    <span className="breedTitle">
-                        Shooter
-                    </span>
-                    <div>
-                        <ul className="movWeb">
-                            <li>
-                                <div>
-                                    <button className="botonesWeb">
-                                        <span className="colorLikes"><i class="fas fa-heart"></i></span>
-                                        <span className="textoInforme">150</span> 
-                                        
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <button className="botonesWeb">
-                                        <span className="colorIconsCard"><i class="fas fa-comment"></i></span>
-                                        <span className="textoInforme">1.5K</span>
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <button className="botonesWeb">
-                                        <span className="colorIconsCard"><i class="far fa-eye"></i></span>
-                                        <span className="textoInforme">120</span>
-                                    </button>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li className="breedCard">
-                    <div className="contenedorImagen">
-                        <img src={carreraimagen} alt="carreras"/>
-                    </div>
-                    <span className="breedTitle">
-                        Racing
-                    </span>
-                    <div>
-                        <ul className="movWeb">
-                            <li>
-                                <div>
-                                    <button className="botonesWeb">
-                                        <span className="colorLikes"><i class="fas fa-heart"></i></span>
-                                        <span className="textoInforme">450</span> 
-                                        
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <button className="botonesWeb">
-                                        <span className="colorIconsCard"><i class="fas fa-comment"></i></span>
-                                        <span className="textoInforme">1.1K</span>
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <button className="botonesWeb">
-                                        <span className="colorIconsCard"><i class="far fa-eye"></i></span>
-                                        <span className="textoInforme">850</span>
-                                    </button>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li className="breedCard">
-                    <div className="contenedorImagen">
-                        <img src={aventuraimagen} alt="Aventuras"/>
-                    </div>
-                    <span className="breedTitle">
-                        Aventuras
-                    </span>
-                    <div>
-                        <ul className="movWeb">
-                            <li>
-                                <div>
-                                    <button className="botonesWeb">
-                                        <span className="colorLikes"><i class="fas fa-heart"></i></span>
-                                        <span className="textoInforme">300</span> 
-                                        
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <button className="botonesWeb">
-                                        <span className="colorIconsCard"><i class="fas fa-comment"></i></span>
-                                        <span className="textoInforme">1.5K</span>
-                                    </button>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <button className="botonesWeb">
-                                        <span className="colorIconsCard"><i class="far fa-eye"></i></span>
-                                        <span className="textoInforme">300</span>
-                                    </button>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                <CardJuegos nombreJuego="FPS" imagen={fpsimagen} like="150" coment="1.5k" visto="120"/>
+                <CardJuegos nombreJuego="Carreras" imagen={carreraimagen} like="450" coment="1.1k" visto="850"/>
+                <CardJuegos nombreJuego="Aventuras" imagen={aventuraimagen} like="300" coment="1.8k" visto="250"/>
             </ul>
         </section>
         <section></section>
     </main>
-    <footer></footer>
+    <footer>
+        
+    </footer>
     </div>
   );
 }
 
+function CardJuegos({nombreJuego, imagen,like, coment, visto}) {
+    return (
+        <li className="breedCard">
+        <div className="contenedorImagen">
+             <img src={imagen} alt="ImagenInfo"/>
+        </div>
+        <span className="breedTitle">{nombreJuego}</span>
+        <div>
+            <ul className="movWeb">
+                <li>
+                    <div>
+                        <button className="botonesWeb">
+                            <span className="colorLikes"><i class="fas fa-heart"></i></span>
+                            <span className="textoInforme">{like}</span> 
+                            
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <button className="botonesWeb">
+                            <span className="colorIconsCard"><i class="fas fa-comment"></i></span>
+                            <span className="textoInforme">{coment}</span>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <button className="botonesWeb">
+                            <span className="colorIconsCard"><i class="far fa-eye"></i></span>
+                            <span className="textoInforme">{visto}</span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </li>
+    );
+       
+    
+}
 export default App;
