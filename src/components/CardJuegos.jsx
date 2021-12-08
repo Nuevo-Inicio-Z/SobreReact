@@ -1,4 +1,3 @@
-
 function CardJuegos({nombreJuego, imagen,like, coment, visto}) {
     return (
         <li className="breedCard">
