@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './styles/Styles.css';
 import logozetien from './media/zetien gamer logo beta.png'
 import fpsimagen from './media/fps.jpg'
